@@ -1,0 +1,143 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    <style>
+      body { margin: 0; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <a-scene mindar-image="imageTargetSrc: assets/marker/targets.mind;" 
+             color-space="sRGB" 
+             renderer="colorManagement: true, physicallyCorrectLights" 
+             vr-mode-ui="enabled: false" 
+             device-orientation-permission-ui="enabled: false">
+
+      <a-assets>
+        <!-- Video assets -->
+        <video id="vidGajah" src="assets/video/gajah.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidJerapah" src="assets/video/jerapah.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidBabi" src="assets/video/babi.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidBadak" src="assets/video/badak.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidBuaya" src="assets/video/buaya.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidHarimau" src="assets/video/harimau.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidSinga" src="assets/video/singa.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidTutul" src="assets/video/tutul.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidPanda" src="assets/video/panda.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidKambing" src="assets/video/kambing.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidSerigala" src="assets/video/serigala.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidZebra" src="assets/video/zebra.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidRusa" src="assets/video/rusa.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidAnjing" src="assets/video/anjing.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidMonyet" src="assets/video/monyet.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidKangguru" src="assets/video/kangguru.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidUnta" src="assets/video/unta.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidKuda" src="assets/video/kuda.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidKelinci" src="assets/video/kelinci.mp4" loop playsinline crossorigin="anonymous"></video>
+        <video id="vidKucing" src="assets/video/kucing.mp4" loop playsinline crossorigin="anonymous"></video>
+      </a-assets>
+
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <!-- Marker Entities -->
+      <a-entity mindar-image-target="targetIndex: 0" id="markerGajah">
+        <a-video src="#vidGajah" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 1" id="markerJerapah">
+        <a-video src="#vidJerapah" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 2" id="markerBabi">
+        <a-video src="#vidBabi" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 3" id="markerBadak">
+        <a-video src="#vidBadak" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 4" id="markerBuaya">
+        <a-video src="#vidBuaya" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 5" id="markerHarimau">
+        <a-video src="#vidHarimau" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 6" id="markerSinga">
+        <a-video src="#vidSinga" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 7" id="markerTutul">
+        <a-video src="#vidTutul" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 8" id="markerPanda">
+        <a-video src="#vidPanda" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 9" id="markerKambing">
+        <a-video src="#vidKambing" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 10" id="markerSerigala">
+        <a-video src="#vidSerigala" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 11" id="markerZebra">
+        <a-video src="#vidZebra" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 12" id="markerRusa">
+        <a-video src="#vidRusa" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 13" id="markerAnjing">
+        <a-video src="#vidAnjing" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 14" id="markerMonyet">
+        <a-video src="#vidMonyet" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 15" id="markerKangguru">
+        <a-video src="#vidKangguru" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 16" id="markerUnta">
+        <a-video src="#vidUnta" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 17" id="markerKuda">
+        <a-video src="#vidKuda" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 18" id="markerKelinci">
+        <a-video src="#vidKelinci" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+      <a-entity mindar-image-target="targetIndex: 19" id="markerKucing">
+        <a-video src="#vidKucing" width="1.1" height="1.8" position="0 -0.3 0"></a-video>
+      </a-entity>
+
+    </a-scene>
+
+    <script>
+      const videos = {
+        markerGajah: document.querySelector('#vidGajah'),
+        markerJerapah: document.querySelector('#vidJerapah'),
+        markerBabi: document.querySelector('#vidBabi'),
+        markerBadak: document.querySelector('#vidBadak'),
+        markerBuaya: document.querySelector('#vidBuaya'),
+        markerHarimau: document.querySelector('#vidHarimau'),
+        markerSinga: document.querySelector('#vidSinga'),
+        markerTutul: document.querySelector('#vidTutul'),
+        markerPanda: document.querySelector('#vidPanda'),
+        markerKambing: document.querySelector('#vidKambing'),
+        markerSerigala: document.querySelector('#vidSerigala'),
+        markerZebra: document.querySelector('#vidZebra'),
+        markerRusa: document.querySelector('#vidRusa'),
+        markerAnjing: document.querySelector('#vidAnjing'),
+        markerMonyet: document.querySelector('#vidMonyet'),
+        markerKangguru: document.querySelector('#vidKangguru'),
+        markerUnta: document.querySelector('#vidUnta'),
+        markerKuda: document.querySelector('#vidKuda'),
+        markerKelinci: document.querySelector('#vidKelinci'),
+        markerKucing: document.querySelector('#vidKucing')
+      };
+
+      Object.entries(videos).forEach(([markerId, videoEl]) => {
+        const marker = document.querySelector(`#${markerId}`);
+        marker.addEventListener('targetFound', () => {
+          videoEl.play();
+        });
+        marker.addEventListener('targetLost', () => {
+          videoEl.pause();
+        });
+      });
+    </script>
+  </body>
+</html>
